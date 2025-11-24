@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       setTimeout(() => {
         mainBanner.classList.add("main-banner--animated");
-      }, 100);
+      }, 10);
     }
   }
 });
