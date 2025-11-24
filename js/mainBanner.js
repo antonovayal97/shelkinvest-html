@@ -1,30 +1,27 @@
 class MainBannerAnimator {
   constructor(selector, options = {}) {
     this.mainBanner = document.querySelector(selector);
+    if (!this.mainBanner) return;
+
     this.animationDuration = options.duration || 750;
     this.animationDelayLogo = options.delayLogo || 150;
     this.animationType = options.type || "ease-in-out";
     this.visibilityThreshold = options.visibilityThreshold || 0.7; // 70%
 
-    if (this.mainBanner) {
-      this.mainBannerImage = this.mainBanner.querySelector(
-        ".main-banner__image img"
-      );
-      this.mainBannerBottomImage = this.mainBanner.querySelector(
-        ".main-banner__bottom-image"
-      );
-      this.mainBannerLogo = this.mainBanner.querySelector(
-        ".main-banner__top-logo"
-      );
-      this.mainBannerBottomShadowOne = this.mainBanner.querySelector(
-        ".main-banner__bottom-shadow-1"
-      );
-      this.mainBannerBottomShadowTwo = this.mainBanner.querySelector(
-        ".main-banner__bottom-shadow-2"
-      );
+    // Элементы баннера
+    this.bannerImage = this.mainBanner.querySelector(".main-banner__image img");
+    this.bottomImage = this.mainBanner.querySelector(
+      ".main-banner__bottom-image"
+    );
+    this.logo = this.mainBanner.querySelector(".main-banner__top-logo");
+    this.shadow1 = this.mainBanner.querySelector(
+      ".main-banner__bottom-shadow-1"
+    );
+    this.shadow2 = this.mainBanner.querySelector(
+      ".main-banner__bottom-shadow-2"
+    );
 
-      this.observeVisibility();
-    }
+    this.observeVisibility();
   }
 
   setTransition(element, delay = 0) {
@@ -35,24 +32,17 @@ class MainBannerAnimator {
 
   animate() {
     if (
-      this.mainBannerImage &&
-      this.mainBannerBottomImage &&
-      this.mainBannerLogo &&
-      this.mainBannerBottomShadowOne &&
-      this.mainBannerBottomShadowTwo
+      this.bannerImage &&
+      this.bottomImage &&
+      this.logo &&
+      this.shadow1 &&
+      this.shadow2
     ) {
-      this.setTransition(this.mainBannerImage);
-      this.setTransition(this.mainBannerBottomImage);
-
-      this.setTransition(this.mainBannerLogo, this.animationDelayLogo);
-      this.setTransition(
-        this.mainBannerBottomShadowOne,
-        this.animationDelayLogo
-      );
-      this.setTransition(
-        this.mainBannerBottomShadowTwo,
-        this.animationDelayLogo
-      );
+      this.setTransition(this.bannerImage);
+      this.setTransition(this.bottomImage);
+      this.setTransition(this.logo, this.animationDelayLogo);
+      this.setTransition(this.shadow1, this.animationDelayLogo);
+      this.setTransition(this.shadow2, this.animationDelayLogo);
 
       setTimeout(() => {
         this.mainBanner.classList.add("main-banner--animated");
@@ -69,11 +59,11 @@ class MainBannerAnimator {
             entry.intersectionRatio >= this.visibilityThreshold
           ) {
             this.animate();
-            observer.unobserve(this.mainBanner); // анимация срабатывает один раз
+            observer.unobserve(this.mainBanner);
           }
         });
       },
-      { threshold: this.visibilityThreshold }
+      { threshold: Array.from({ length: 101 }, (_, i) => i / 100) } // шаги 0%–100%
     );
 
     observer.observe(this.mainBanner);
