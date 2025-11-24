@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         "all " + animationDuration + "ms " + animationType;
       mainBannerBottomShadowTwo.style.transitionDelay = animationDelayLogo;
 
-      mainBanner.classList.add("main-banner--animated");
+      setTimeout(() => {
+        mainBanner.classList.add("main-banner--animated");
+      }, 100);
     }
   }
 });
