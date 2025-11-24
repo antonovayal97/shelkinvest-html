@@ -437,6 +437,9 @@ textarea {
   gap: 36px;
 }
 .header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 232px;
   font-weight: 500;
   font-size: 16px;
