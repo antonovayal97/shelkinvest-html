@@ -236,7 +236,7 @@ textarea {
   height: 150%;
   background: linear-gradient(180deg, rgba(55, 165, 249, 0.4) 37.22%, rgba(12, 37, 73, 0.4) 94.26%);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: all 0.5s ease;
   transition-delay: 100ms;
 }
 .main-banner__top-logo {
