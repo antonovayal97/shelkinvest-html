@@ -381,6 +381,7 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  position: relative;
 }
 .header__menu-item--dropdown a {
   display: flex;
@@ -397,6 +398,46 @@ textarea {
 .header__menu-link-icon {
   width: 14px;
   height: 14px;
+  transition: transform 0.3s ease;
+}
+.header__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  z-index: 1000;
+}
+.header__submenu-item {
+  list-style: none;
+}
+.header__submenu-link {
+  display: block;
+  padding: 12px 20px;
+  color: var(--color-dark-blue);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.header__submenu-link:hover {
+  background-color: rgba(12, 37, 73, 0.1);
+}
+.header__menu-item--dropdown:hover .header__submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.header__menu-item--dropdown:hover .header__menu-link-icon {
+  transform: rotate(180deg);
 }
 .header__info {
   display: flex;
@@ -432,6 +473,9 @@ textarea {
   padding: 8px;
   padding-top: 6px;
 }
+.header__contacts-phone-wrapper {
+  position: relative;
+}
 .header__contacts-phone-icon {
   width: 20px;
   height: 20px;
@@ -443,9 +487,47 @@ textarea {
 .header__contacts-phone-content-icon {
   width: 14px;
   height: 14px;
+  transition: transform 0.3s ease;
 }
 .header__contacts-phone-dropdown {
-  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  z-index: 1000;
+  list-style: none;
+}
+.header__contacts-phone-dropdown-item {
+  list-style: none;
+}
+.header__contacts-phone-dropdown-link {
+  display: block;
+  padding: 12px 20px;
+  color: var(--color-dark-blue);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.header__contacts-phone-dropdown-link:hover {
+  background-color: rgba(12, 37, 73, 0.1);
+}
+.header__contacts-phone-wrapper:hover .header__contacts-phone-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.header__contacts-phone-wrapper:hover .header__contacts-phone-content-icon {
+  transform: rotate(180deg);
 }
 .header-work-time {
   font-weight: 200;
