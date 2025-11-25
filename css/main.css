@@ -5,101 +5,66 @@
 }
 
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Thin.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-Thin.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf") format("truetype") url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf") format("truetype") url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-LightItalic.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-ExtraLight.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraLight.ttf") format("truetype");
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-ExtraLight.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-ExtraLightItalic.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraLightItalic.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Light.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Regular.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Medium.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-SemiBold.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Bold.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-ExtraBold.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PlusJakartaSans";
-  src: url("/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Black.ttf") format("truetype"), url("/local/templates/shelkainvest/assets/fonts/Commissioner/Commissioner-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 *,
@@ -127,7 +92,7 @@ ul {
 
 html,
 body {
-  font-family: "PlusJakartaSans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Commissioner", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-rendering: optimizeSpeed;
 }
 
