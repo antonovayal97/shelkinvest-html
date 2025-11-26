@@ -363,8 +363,8 @@ textarea {
 @media (max-width: 767.98px) {
   .main-banner__bottom-text {
     width: 100%;
-    margin-right: calc(var(--bs-gutter-x) * 0.5);
-    margin-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
   }
 }
 .main-banner__bottom-text::before {
