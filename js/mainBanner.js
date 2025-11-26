@@ -8,7 +8,6 @@ class MainBannerAnimator {
     this.animationType = options.type || "ease-in-out";
     this.visibilityThreshold = options.visibilityThreshold || 0.7; // 70%
 
-    // Элементы баннера
     this.bannerImage = this.mainBanner.querySelector(".main-banner__image img");
     this.bottomImage = this.mainBanner.querySelector(
       ".main-banner__bottom-image"
@@ -30,6 +29,11 @@ class MainBannerAnimator {
     if (delay) element.style.transitionDelay = `${delay}ms`;
   }
 
+  resetTransition(element) {
+    if (!element) return;
+    element.style = null;
+  }
+
   animate() {
     if (
       this.bannerImage &&
@@ -47,6 +51,14 @@ class MainBannerAnimator {
       setTimeout(() => {
         this.mainBanner.classList.add("main-banner--animated");
       }, 10);
+
+      setTimeout(() => {
+        this.resetTransition(this.bannerImage);
+        this.resetTransition(this.bottomImage);
+        this.resetTransition(this.logo);
+        this.resetTransition(this.shadow1);
+        this.resetTransition(this.shadow2);
+      }, this.animationDuration + 200);
     }
   }
 
@@ -58,12 +70,14 @@ class MainBannerAnimator {
             entry.isIntersecting &&
             entry.intersectionRatio >= this.visibilityThreshold
           ) {
-            this.animate();
+            setTimeout(() => {
+              this.animate();
+            }, 100);
             observer.unobserve(this.mainBanner);
           }
         });
       },
-      { threshold: Array.from({ length: 101 }, (_, i) => i / 100) } // шаги 0%–100%
+      { threshold: Array.from({ length: 101 }, (_, i) => i / 100) }
     );
 
     observer.observe(this.mainBanner);
