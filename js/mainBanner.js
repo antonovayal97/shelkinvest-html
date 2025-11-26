@@ -50,7 +50,7 @@ class MainBannerAnimator {
 
       setTimeout(() => {
         this.mainBanner.classList.add("main-banner--animated");
-      }, 10);
+      }, 110);
 
       setTimeout(() => {
         this.resetTransition(this.bannerImage);
@@ -70,9 +70,7 @@ class MainBannerAnimator {
             entry.isIntersecting &&
             entry.intersectionRatio >= this.visibilityThreshold
           ) {
-            setTimeout(() => {
-              this.animate();
-            }, 100);
+            this.animate();
             observer.unobserve(this.mainBanner);
           }
         });
