@@ -31,7 +31,11 @@ class MainBannerAnimator {
 
   resetTransition(element) {
     if (!element) return;
-    element.style = null;
+    element.style.removeProperty("transition");
+    element.style.removeProperty("transition-delay");
+    element.style.removeProperty("-webkit-transition");
+    element.style.removeProperty("-moz-transition");
+    element.style.removeProperty("-o-transition");
   }
 
   animate() {
@@ -52,13 +56,14 @@ class MainBannerAnimator {
         this.mainBanner.classList.add("main-banner--animated");
       }, 110);
 
+      const maxDelay = Math.max(0, this.animationDelayLogo);
       setTimeout(() => {
         this.resetTransition(this.bannerImage);
         this.resetTransition(this.bottomImage);
         this.resetTransition(this.logo);
         this.resetTransition(this.shadow1);
         this.resetTransition(this.shadow2);
-      }, this.animationDuration + 200);
+      }, this.animationDuration + maxDelay + 200);
     }
   }
 
