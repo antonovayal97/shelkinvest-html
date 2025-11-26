@@ -29,13 +29,12 @@ class MainBannerAnimator {
     if (delay) element.style.transitionDelay = `${delay}ms`;
   }
 
-  resetTransition(element) {
-    if (!element) return;
-    element.style.removeProperty("transition");
-    element.style.removeProperty("transition-delay");
-    element.style.removeProperty("-webkit-transition");
-    element.style.removeProperty("-moz-transition");
-    element.style.removeProperty("-o-transition");
+  resetTransition() {
+    this.bannerImage.style = null;
+    this.bottomImage.style = null;
+    this.logo.style = null;
+    this.shadow1.style = null;
+    this.shadow2.style = null;
   }
 
   animate() {
@@ -54,16 +53,10 @@ class MainBannerAnimator {
 
       setTimeout(() => {
         this.mainBanner.classList.add("main-banner--animated");
+        setTimeout(() => {
+          this.resetTransition();
+        }, this.animationDuration + this.animationDelayLogo + 200);
       }, 110);
-
-      const maxDelay = Math.max(0, this.animationDelayLogo);
-      setTimeout(() => {
-        this.resetTransition(this.bannerImage);
-        this.resetTransition(this.bottomImage);
-        this.resetTransition(this.logo);
-        this.resetTransition(this.shadow1);
-        this.resetTransition(this.shadow2);
-      }, this.animationDuration + maxDelay + 200);
     }
   }
 
