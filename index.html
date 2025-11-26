@@ -12,7 +12,12 @@
     <header class="header">
       <div class="container c-container">
         <div class="row">
-          <div class="col-12 header__inner"><a class="header__logo" href="#">
+          <div class="col-12 header__inner">
+            <button class="header__burger">
+              <svg class="icon header__burger-icon">
+                <use href="./img/svg/sprite.svg#burger-menu"></use>
+              </svg>
+            </button><a class="header__logo" href="#">
               <div class="header__logo-image"><img src="./img/header-logo.svg" alt="logo"></div>
               <div class="header__logo-text"><span class="header__logo-text-title">ООО «Щелканинвест»</span><span class="header__logo-text-description">Растениеводческая компания </span></div></a>
             <div class="header__menu">
@@ -52,7 +57,10 @@
               </div>
               <div class="header__work-time">Работаем с 8 - 17 ч, <br>перерыв с 12 - 13 ч</div>
             </div>
-            <div class="header__button"><a class="button" href="#">Заказать звонок</a></div>
+            <div class="header__button"><a class="header__button-mobile" href="#">
+                <svg class="icon header__button-mobile-icon">
+                  <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                </svg></a><a class="button" href="#">Заказать звонок</a></div>
           </div>
         </div>
       </div>
@@ -63,7 +71,7 @@
         <div class="main-banner__top">
           <div class="container c-container">
             <div class="row">
-              <div class="col-9">
+              <div class="col-12 col-md-9">
                 <div class="main-banner__top-logo"><img src="./img/shelkainvest.svg" alt="logo"></div>
               </div>
             </div>
@@ -73,7 +81,7 @@
           <div class="main-banner__bottom-image"><img src="./img/trava.webp" alt="trava"></div>
           <div class="container c-container main-banner__bottom-content">
             <div class="row justify-content-between">
-              <div class="col-3">
+              <div class="col-12 col-md-5 col-lg-4 order-2 order-lg-1">
                 <button class="main-banner__button"><span>Получить консультацию</span>
                   <div class="main-banner__button-arrow">
                     <svg class="icon main-banner__button-arrow-icon">
@@ -82,7 +90,7 @@
                   </div>
                 </button>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-12 col-lg-6 order-1 order-lg-2">
                 <div class="main-banner__bottom-text"><span class="color-accent">Растениеводческая</span> компания <br>специализирующаяся на выращивании <span class="color-accent">семян нута</span></div>
               </div>
             </div>
