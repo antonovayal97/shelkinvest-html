@@ -15,5 +15,5 @@ function hidePageLoader() {
 }
 
 window.addEventListener("load", () => {
-  setTimeout(hidePageLoader, 100);
+  setTimeout(hidePageLoader, 50);
 });
