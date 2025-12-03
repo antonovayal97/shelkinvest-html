@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./libs/hystmodal.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/blocks/main-banner.min.css">
+    <link rel="stylesheet" href="./css/blocks/advantages.min.css">
+    <link rel="stylesheet" href="./css/blocks/our-products.min.css">
+    <link rel="stylesheet" href="./css/blocks/about.min.css">
+    <link rel="stylesheet" href="./css/blocks/consult.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12 header__inner">
+            <button class="header__burger">
+              <svg class="icon header__burger-icon">
+                <use href="./img/svg/sprite.svg#burger-menu-"></use>
+              </svg>
+              <svg class="icon header__burger-close-icon">
+                <use href="./img/svg/sprite.svg#close-menu"></use>
+              </svg>
+            </button><a class="logo header__logo" href="/">
+              <div class="logo__image"><img src="./img/header-logo.svg" alt="logo"></div>
+              <div class="logo__text"><span class="logo__text-title">ООО «Щелканинвест»</span><span class="logo__text-description">Растениеводческая компания </span></div></a>
+            <div class="c-menu">
+              <ul class="c-menu-list">
+                <li class="c-menu-item c-menu-item--dropdown"><a class="c-menu-link" href="#"><span class="c-menu-link-text">Каталог семян </span>
+                    <svg class="icon c-menu-link-icon">
+                      <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                    </svg></a>
+                  <ul class="c-submenu">
+                    <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена овощей</a></li>
+                    <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена цветов</a></li>
+                    <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена злаков</a></li>
+                  </ul>
+                </li>
+                <li class="c-menu-item"><a class="c-menu-link" href="#">Пресс-центр</a></li>
+                <li class="c-menu-item"><a class="c-menu-link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__info">
+              <div class="c-contacts"><a class="c-contacts__email" href="email:Chelkan_invest@mail.ru">
+                  <svg class="icon c-contacts__email-icon">
+                    <use href="./img/svg/sprite.svg#material-symbols-light_mail"></use>
+                  </svg><span class="c-contacts__email-text">Chelkan_invest@mail.ru</span></a>
+                <div class="c-contacts__phone-wrapper"><a class="c-contacts__phone" href="tel:8 (84454) 5-46-31">
+                    <svg class="icon c-contacts__phone-icon">
+                      <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                    </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                      <svg class="icon c-contacts__phone-content-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg></span></a>
+                  <ul class="c-contacts__phone-dropdown">
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999999">8 (84454) 5-46-31</a></li>
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999998">8 (84454) 5-46-32</a></li>
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999997">8 (84454) 5-46-33 </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__work-time">Работаем с 8 - 17 ч, <br>перерыв с 12 - 13 ч</div>
+            </div>
+            <div class="header__button"><a class="header__button-mobile" href="#" data-hystmodal="#modal-2">
+                <svg class="icon header__button-mobile-icon">
+                  <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                </svg></a><a class="button" href="#" data-hystmodal="#modal-2">Заказать звонок</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile-overlay">
+        <div class="header__mobile-overlay-blur"></div>
+      </div>
+      <div class="header__mobile-menu">
+        <div class="header__mobile-menu-content">
+          <div class="header__mobile-contacts"><a class="header__mobile-contacts-email" href="email:Chelkan_invest@mail.ru">
+              <svg class="icon header__mobile-contacts-email-icon">
+                <use href="./img/svg/sprite.svg#material-symbols-light_mail"></use>
+              </svg><span class="header__mobile-contacts-email-text">Chelkan_invest@mail.ru</span></a>
+            <div class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+              <button class="c-mobile-menu-link c-mobile-menu-link--toggle">
+                <div class="c-contacts__phone">
+                  <svg class="icon c-contacts__phone-icon">
+                    <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                  </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                    <svg class="icon c-contacts__phone-content-icon">
+                      <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                    </svg></span>
+                </div>
+              </button>
+              <ul class="c-mobile-submenu">
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-31">8 (84454) 5-46-31</a></li>
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-32">8 (84454) 5-46-32</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="c-mobile-menu-list">
+            <li class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+              <button class="c-mobile-menu-link c-mobile-menu-link--toggle"><span class="c-mobile-menu-link-text">Каталог семян</span>
+                <svg class="icon c-mobile-menu-link-icon">
+                  <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                </svg>
+              </button>
+              <ul class="c-mobile-submenu">
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена овощей</a></li>
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена цветов</a></li>
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена злаков</a></li>
+              </ul>
+            </li>
+            <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Пресс-центр</a></li>
+            <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Контакты</a></li>
+          </ul><a class="header__mobile-button button" href="#" data-hystmodal="#modal-2">Заказать звонок</a>
+          <div class="header__mobile-work-time">Работаем с 8 - 17 ч, перерыв с 12 - 13 ч</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-banner">
+        <div class="main-banner__image"><img src="./img/background-full.webp" alt="banner"></div>
+        <div class="main-banner__top">
+          <div class="container c-container">
+            <div class="row">
+              <div class="col-12 col-md-9">
+                <div class="main-banner__top-logo"><img src="./img/shelkainvest.svg" alt="logo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-banner__bottom">
+          <div class="main-banner__bottom-image"><img src="./img/trava.webp" alt="trava"></div>
+          <div class="container c-container main-banner__bottom-content">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-5 col-lg-4 order-2 order-lg-1">
+                <div class="main-banner__button">
+                  <button class="button-arrow" data-hystmodal="#modal-2"><span>Получить консультацию</span>
+                    <div class="button-arrow__arrow">
+                      <svg class="icon button-arrow_arrow-icon">
+                        <use href="./img/svg/sprite.svg#button-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6 order-1 order-lg-2">
+                <div class="main-banner__bottom-text"><span class="color-accent">Растениеводческая</span> компания <br>специализирующаяся на выращивании <span class="color-accent">семян нута</span> селекции <span class="color-accent">Балашова В.В. и Балашова А.В</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-banner__bottom-shadows">
+            <div class="main-banner__bottom-shadow-1"></div>
+            <div class="main-banner__bottom-shadow-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="advantages">
+        <div class="container c-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advantages__title">
+                <h2>Преимущества <b>ООО&nbsp;Щелканинвест</b></h2>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="advantages__cards"> 
+                <div class="advantages__cards-grid">
+                  <div class="advantages__card advantages__card--1">
+                    <div class="advantages__card-content">
+                      <div class="advantages__card-name">
+                        <h3>Собственное <br>производство</h3>
+                      </div>
+                      <div class="advantages__card-text">
+                        <p>Выращиваем нут — наши агрономы учитывают особенности климата и почвы в каждом регионе, чтобы получить максимальный урожай.</p>
+                      </div>
+                    </div>
+                    <div class="advantages__card-image"><img src="./img/advantages-1.svg" alt=""></div>
+                  </div>
+                  <div class="advantages__card advantages__card--2">
+                    <div class="advantages__card-content">
+                      <div class="advantages__card-name">
+                        <h3>Профессионализм <br>и помощь </h3>
+                      </div>
+                      <div class="advantages__card-text">
+                        <p>Мы  всегда на связи: от подбора сорта до консультаций по технологиям выращивания и сбора урожая.</p>
+                      </div>
+                    </div>
+                    <div class="advantages__card-image"><img src="./img/advantages-2.svg" alt=""></div>
+                  </div>
+                  <div class="advantages__card advantages__card--3">
+                    <div class="advantages__card-content">
+                      <div class="advantages__card-name">
+                        <h3>Разнообразие <br>сортов нута</h3>
+                      </div>
+                      <div class="advantages__card-text">
+                        <p>От классических калибров до крупноплодных вариантов — под любые нужды.</p>
+                      </div>
+                    </div>
+                    <div class="advantages__card-image"><img src="./img/advantages-3.svg" alt=""></div>
+                  </div>
+                  <div class="advantages__card advantages__card--4">
+                    <div class="advantages__card-content">
+                      <div class="advantages__card-name">
+                        <h3>Лучшее качество</h3>
+                      </div>
+                      <div class="advantages__card-text">
+                        <p>Семена проходят строгий контроль автора сортов и имеют все необходимые сертификаты соответствия.</p>
+                      </div>
+                    </div>
+                    <div class="advantages__card-image"><img src="./img/advantages-4.svg" alt=""></div>
+                  </div>
+                  <div class="advantages__card advantages__card--5">
+                    <div class="advantages__card-content">
+                      <div class="advantages__card-name">
+                        <h3>Совместная работа <br>с селекционерами</h3>
+                      </div>
+                      <div class="advantages__card-text">
+                        <p>Участвуем в выведении новых перспективных сортов нута.</p>
+                      </div>
+                    </div>
+                    <div class="advantages__card-image"><img src="./img/advantages-5.svg" alt=""></div>
+                  </div>
+                  <div class="advantages__card advantages__card--6">
+                    <div class="advantages__card-content">
+                      <div class="advantages__card-name">
+                        <h3>Технологическое <br>преимущество</h3>
+                      </div>
+                      <div class="advantages__card-text">
+                        <p>Предлагаемые сорта имеют однозначное превосходство в  урожайности, уборке, хранении и транспортировке.</p>
+                      </div>
+                    </div>
+                    <div class="advantages__card-image"><img src="./img/advantages-6.svg" alt=""></div>
+                  </div>
+                </div>
+                <div class="advantages__cards-natures">
+                  <div class="advantages__cards-tree"><img src="./img/tree.svg" alt=""></div>
+                  <div class="advantages__cards-leafs">
+                    <div class="advantages__cards-leaf advantages__cards-leaf--left"><img src="./img/advantages-leaf.svg" alt=""></div>
+                    <div class="advantages__cards-leaf advantages__cards-leaf--right"><img src="./img/advantages-leaf.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-products">
+        <div class="container c-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="our-products__triangle"><img src="./img/our-products-triangle.svg" alt=""></div>
+            </div>
+            <div class="col-12">
+              <div class="our-products__title">
+                <h2>Наша продукция</h2>
+              </div>
+            </div>
+            <div class="our-products__cards">
+              <div class="row">
+                <div class="col-12 col-md-4 our-products__card-wrap"><a class="our-products__card" href="#">
+                    <div class="our-products__card-image"><img src="./img/our-products-1.png" alt=""></div>
+                    <div class="our-products__card-button">
+                      <div class="our-products__card-button-title"><span>ВОЛЖАНИН</span></div>
+                      <div class="our-products__card-button-arrow">
+                        <svg class="icon our-products__card-button-arrow-icon">
+                          <use href="./img/svg/sprite.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div></a></div>
+                <div class="col-12 col-md-4 our-products__card-wrap"><a class="our-products__card" href="#">
+                    <div class="our-products__card-image"><img src="./img/our-products-2.png" alt=""></div>
+                    <div class="our-products__card-button">
+                      <div class="our-products__card-button-title"><span>ВОЛЖАНИН 50</span></div>
+                      <div class="our-products__card-button-arrow">
+                        <svg class="icon our-products__card-button-arrow-icon">
+                          <use href="./img/svg/sprite.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div></a></div>
+                <div class="col-12 col-md-4 our-products__card-wrap"><a class="our-products__card" href="#">
+                    <div class="our-products__card-image"><img src="./img/our-products-3.png" alt=""></div>
+                    <div class="our-products__card-button">
+                      <div class="our-products__card-button-title"><span>Прочие сельхоз <br>культуры и продукция</span></div>
+                      <div class="our-products__card-button-arrow">
+                        <svg class="icon our-products__card-button-arrow-icon">
+                          <use href="./img/svg/sprite.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-products__image"><img src="./img/our-products-background.png" alt=""></div>
+      </div>
+      <div class="about" style="background-image: url(./img/about-background.webp)">
+        <div class="container c-container">
+          <div class="row">
+            <div class="col-12 col-md-5">
+              <div class="about__content">
+                <div class="about__title">
+                  <h2>О компании <b>Щелканинвест</b></h2>
+                </div>
+                <div class="about__desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent</p>
+                  <p>Per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+                </div>
+                <div class="about__link"><a class="link-button" href="#"><span class="link-button__text">Подробнее</span>
+                    <div class="link-button__arrow">
+                      <svg class="icon link-button__arrow-icon">
+                        <use href="./img/svg/sprite.svg#button-arrow"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="about__image">
+                <div class="about__image-content"><img src="./img/about__image.webp" alt=""></div>
+                <div class="about__image-block"></div>
+                <div class="about__leaf-1"><img src="./img/about__leaf-2.webp" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__leaf-2"><img src="./img/about__leaf-1.webp" alt=""></div>
+      </div>
+      <div class="consult" style="background-image: url(./img/consult.webp)">
+        <div class="container c-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="consult__title">
+                <h2>Заказать консультацию</h2>
+              </div>
+              <div class="consult__form">
+                <div class="consult__inputs">
+                  <input class="c-input" type="text" placeholder="Ваше имя">
+                  <input class="c-input c-phone-input" type="phone" placeholder="Телефон">
+                  <input class="c-input" type="email" placeholder="Email">
+                </div>
+                <div class="consult__check">
+                  <label class="c-checkbox-wrap">
+                    <input type="checkbox" name=""><span class="c-checkbox">
+                      <svg class="icon c-checkbox-icon">
+                        <use href="./img/svg/sprite.svg#c-check"></use>
+                      </svg></span>
+                  </label>
+                  <div class="consult__check-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
+                </div>
+                <div class="consult__button">
+                  <button class="button button--inversed button--big" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="page-loader">
+      <div class="spinner"></div>
+    </div>
+    <button class="page-scroller">
+      <svg class="icon page-scroller-icon">
+        <use href="./img/svg/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+    <div class="hystmodal" id="modal-1" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="c-modal">
+            <div class="c-modal__block">
+              <button class="c-modal__close" data-hystclose>
+                <svg class="icon c-modal__close-icon">
+                  <use href="./img/svg/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+              <div class="c-modal__title"><span>Свяжемся с вами <br>как можно скорее</span></div>
+              <form class="c-modal__form">
+                <input class="c-input" type="text" placeholder="Ваше имя">
+                <input class="c-input c-phone-input" type="phone" placeholder="Телефон для связи*">
+                <div class="consult__check">
+                  <label class="c-checkbox-wrap">
+                    <input type="checkbox" name=""><span class="c-checkbox">
+                      <svg class="icon c-checkbox-icon">
+                        <use href="./img/svg/sprite.svg#c-check"></use>
+                      </svg></span>
+                  </label>
+                  <div class="consult__check-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
+                </div>
+                <div class="c-modal__button">
+                  <button class="button" type="submit" data-hystmodal="#modal-2">Заказать звонок</button>
+                </div>
+              </form>
+            </div>
+            <div class="c-modal__required"> <span>*</span><span>— обязательные поля для заполнения</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="modal-2" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="c-modal">
+            <div class="c-modal__block">
+              <button class="c-modal__close" data-hystclose>
+                <svg class="icon c-modal__close-icon">
+                  <use href="./img/svg/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+              <div class="c-modal__title"><span>Свяжемся с вами <br>как можно скорее</span></div>
+              <form class="c-modal__form">
+                <input class="c-input c-phone-input" type="phone" placeholder="Телефон для связи">
+                <div class="consult__check">
+                  <label class="c-checkbox-wrap">
+                    <input type="checkbox" name=""><span class="c-checkbox">
+                      <svg class="icon c-checkbox-icon">
+                        <use href="./img/svg/sprite.svg#c-check"></use>
+                      </svg></span>
+                  </label>
+                  <div class="consult__check-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
+                </div>
+                <div class="c-modal__button">
+                  <button class="button" type="submit" data-hystmodal="#modal-2">Заказать звонок</button>
+                </div>
+              </form>
+            </div>
+            <div class="c-modal__tree"><img src="./img/form-tree.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12 footer__top">
+            <div class="footer__top-left"><a class="logo footer__logo" href="/">
+                <div class="logo__image"><img src="./img/footer-logo.svg" alt="logo"></div>
+                <div class="logo__text"><span class="logo__text-title">ООО «Щелканинвест»</span><span class="logo__text-description">Растениеводческая компания </span></div></a>
+              <div class="c-menu footer__menu">
+                <ul class="c-menu-list">
+                  <li class="c-menu-item c-menu-item--dropdown"><a class="c-menu-link" href="#"><span class="c-menu-link-text">Каталог семян</span>
+                      <svg class="icon c-menu-link-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg></a>
+                    <ul class="c-submenu">
+                      <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена овощей</a></li>
+                      <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена цветов</a></li>
+                    </ul>
+                  </li>
+                  <li class="c-menu-item"><a class="c-menu-link" href="#">Пресс-центр</a></li>
+                  <li class="c-menu-item"><a class="c-menu-link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="footer__mobile-menu">
+                <ul class="c-mobile-menu-list">
+                  <li class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+                    <button class="c-mobile-menu-link c-mobile-menu-link--toggle"><span class="c-mobile-menu-link-text">Каталог семян</span>
+                      <svg class="icon c-mobile-menu-link-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg>
+                    </button>
+                    <ul class="c-mobile-submenu">
+                      <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена овощей</a></li>
+                      <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена цветов</a></li>
+                      <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена злаков</a></li>
+                    </ul>
+                  </li>
+                  <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Пресс-центр</a></li>
+                  <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__top-right">
+              <div class="c-contacts footer__contacts">
+                <div class="c-contacts__phone-wrapper"><a class="c-contacts__phone" href="tel:8 (84454) 5-46-31">
+                    <svg class="icon c-contacts__phone-icon">
+                      <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                    </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                      <svg class="icon c-contacts__phone-content-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg></span></a>
+                  <ul class="c-contacts__phone-dropdown">
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999999">8 (84454) 5-46-31</a></li>
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999998">8 (84454) 5-46-32</a></li>
+                  </ul>
+                </div>
+                <div class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+                  <button class="c-mobile-menu-link c-mobile-menu-link--toggle">
+                    <div class="c-contacts__phone">
+                      <svg class="icon c-contacts__phone-icon">
+                        <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                      </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                        <svg class="icon c-contacts__phone-content-icon">
+                          <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                        </svg></span>
+                    </div>
+                  </button>
+                  <ul class="c-mobile-submenu">
+                    <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-31">8 (84454) 5-46-31</a></li>
+                    <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-32">8 (84454) 5-46-32</a></li>
+                  </ul>
+                </div><a class="c-contacts__email" href="email:Chelkan_invest@mail.ru">
+                  <svg class="icon c-contacts__email-icon">
+                    <use href="./img/svg/sprite.svg#material-symbols-light_mail"></use>
+                  </svg><span class="c-contacts__email-text">Chelkan_invest@mail.ru</span></a>
+              </div>
+              <div class="footer__button-n-worktime">
+                <div class="footer__button"><a class="button button--inversed" href="#" data-hystmodal="#modal-2">Заказать звонок</a></div>
+                <div class="footer__worktime"><span>Работаем <b>с 8 - 17 ч,</b> перерыв <b>с 12 - 13 ч</b></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12 footer__bottom">
+            <div class="footer__bottom-links"><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></div>
+            <div class="footer__bottom-pr-volga">
+              <div class="footer__bottom-pr-volga-text"><span>Создание и продвижение сайтов — </span></div>
+              <div class="footer__bottom-pr-volga-link"><a href="#">PR-VOLGA</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/mainBanner.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./libs/hystmodal.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

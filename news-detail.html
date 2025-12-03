@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./libs/hystmodal.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12 header__inner">
+            <button class="header__burger">
+              <svg class="icon header__burger-icon">
+                <use href="./img/svg/sprite.svg#burger-menu-"></use>
+              </svg>
+              <svg class="icon header__burger-close-icon">
+                <use href="./img/svg/sprite.svg#close-menu"></use>
+              </svg>
+            </button><a class="logo header__logo" href="/">
+              <div class="logo__image"><img src="./img/header-logo.svg" alt="logo"></div>
+              <div class="logo__text"><span class="logo__text-title">ООО «Щелканинвест»</span><span class="logo__text-description">Растениеводческая компания </span></div></a>
+            <div class="c-menu">
+              <ul class="c-menu-list">
+                <li class="c-menu-item c-menu-item--dropdown"><a class="c-menu-link" href="#"><span class="c-menu-link-text">Каталог семян </span>
+                    <svg class="icon c-menu-link-icon">
+                      <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                    </svg></a>
+                  <ul class="c-submenu">
+                    <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена овощей</a></li>
+                    <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена цветов</a></li>
+                    <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена злаков</a></li>
+                  </ul>
+                </li>
+                <li class="c-menu-item"><a class="c-menu-link" href="#">Пресс-центр</a></li>
+                <li class="c-menu-item"><a class="c-menu-link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__info">
+              <div class="c-contacts"><a class="c-contacts__email" href="email:Chelkan_invest@mail.ru">
+                  <svg class="icon c-contacts__email-icon">
+                    <use href="./img/svg/sprite.svg#material-symbols-light_mail"></use>
+                  </svg><span class="c-contacts__email-text">Chelkan_invest@mail.ru</span></a>
+                <div class="c-contacts__phone-wrapper"><a class="c-contacts__phone" href="tel:8 (84454) 5-46-31">
+                    <svg class="icon c-contacts__phone-icon">
+                      <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                    </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                      <svg class="icon c-contacts__phone-content-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg></span></a>
+                  <ul class="c-contacts__phone-dropdown">
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999999">8 (84454) 5-46-31</a></li>
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999998">8 (84454) 5-46-32</a></li>
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999997">8 (84454) 5-46-33 </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__work-time">Работаем с 8 - 17 ч, <br>перерыв с 12 - 13 ч</div>
+            </div>
+            <div class="header__button"><a class="header__button-mobile" href="#" data-hystmodal="#modal-2">
+                <svg class="icon header__button-mobile-icon">
+                  <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                </svg></a><a class="button" href="#" data-hystmodal="#modal-2">Заказать звонок</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile-overlay">
+        <div class="header__mobile-overlay-blur"></div>
+      </div>
+      <div class="header__mobile-menu">
+        <div class="header__mobile-menu-content">
+          <div class="header__mobile-contacts"><a class="header__mobile-contacts-email" href="email:Chelkan_invest@mail.ru">
+              <svg class="icon header__mobile-contacts-email-icon">
+                <use href="./img/svg/sprite.svg#material-symbols-light_mail"></use>
+              </svg><span class="header__mobile-contacts-email-text">Chelkan_invest@mail.ru</span></a>
+            <div class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+              <button class="c-mobile-menu-link c-mobile-menu-link--toggle">
+                <div class="c-contacts__phone">
+                  <svg class="icon c-contacts__phone-icon">
+                    <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                  </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                    <svg class="icon c-contacts__phone-content-icon">
+                      <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                    </svg></span>
+                </div>
+              </button>
+              <ul class="c-mobile-submenu">
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-31">8 (84454) 5-46-31</a></li>
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-32">8 (84454) 5-46-32</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="c-mobile-menu-list">
+            <li class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+              <button class="c-mobile-menu-link c-mobile-menu-link--toggle"><span class="c-mobile-menu-link-text">Каталог семян</span>
+                <svg class="icon c-mobile-menu-link-icon">
+                  <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                </svg>
+              </button>
+              <ul class="c-mobile-submenu">
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена овощей</a></li>
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена цветов</a></li>
+                <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена злаков</a></li>
+              </ul>
+            </li>
+            <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Пресс-центр</a></li>
+            <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Контакты</a></li>
+          </ul><a class="header__mobile-button button" href="#" data-hystmodal="#modal-2">Заказать звонок</a>
+          <div class="header__mobile-work-time">Работаем с 8 - 17 ч, перерыв с 12 - 13 ч</div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__item"><a href="#">Главная</a></div>
+              <div class="breadcrumbs__dot"><span>•</span></div>
+              <div class="breadcrumbs__item"><a href="#">Новости</a></div>
+              <div class="breadcrumbs__dot"><span>•</span></div>
+              <div class="breadcrumbs__item"><span>Семена нута Волжанин 50</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-news-detail">
+        <div class="container c-container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <div class="p-news-detail__date-n-tags">
+                <div class="p-news-detail__date"><span>28 ноября</span></div>
+                <div class="p-news-detail__date-n-tags-dot"><span>•</span></div>
+                <div class="p-news-detail__tags">
+                  <div class="p-news-detail__tag"><span>Название тега новости</span></div>
+                </div>
+              </div>
+              <div class="p-news-detail__title">
+                <h1>Семена нута Волжанин 50: характеристики, преимущества и экономическая эффективность выращивания</h1>
+              </div>
+              <div class="p-news-detail__block">
+                <div class="p-news-detail__top-text">
+                  <p>Семена нута Волжанин-50 — это перспективный, высокотехнологичный сорт, хорошо адаптированный к климатическим условиям южных, центральных и восточных регионов России. Компания ООО «Щелканинвест» занимается профессиональным производством сертифицированных семян, обеспечивая хозяйствам стабильные показатели урожайности, высокую всхожесть и чистоту посевного материала.</p>
+                </div>
+                <div class="p-news-detail__top-image"><img src="./img/news-detail.png" alt=""></div>
+                <div class="p-news-detail__content">
+                  <p>Волжанин-50 востребован среди фермерских хозяйств благодаря устойчивости к засухе, выравненному созреванию и высокой окупаемости производства. Сорт оптимально адаптирован под современные требования к рентабельному растениеводству, что делает его выгодным выбором как для небольших фермеров, так и для крупных агрохолдингов.</p>
+                  <h2>Ботанические и биологические характеристики сорта</h2>
+                  <p>Волжанин-50 относится к типу крупносемянных нутов, предназначенных преимущественно для продовольственного и перерабатывающего сегмента рынка. Основные характеристики сорта:</p>
+                  <ul class="ul-dot">
+                    <li> 
+                      <p>Тип растения: кустовой, среднерослый, с устойчивым стеблем;</p>
+                    </li>
+                    <li> 
+                      <p>Период вегетации: 85–110 дней (зависит от региона и условий);</p>
+                    </li>
+                    <li> 
+                      <p>Тип семян: крупные, округлые, бежевого оттенка;</p>
+                    </li>
+                    <li> 
+                      <p>Масса 1000 семян: 280–380 г;</p>
+                    </li>
+                    <li> 
+                      <p>Содержание белка: 19–23 %;</p>
+                    </li>
+                    <li> 
+                      <p>Высота боба над землей: оптимальная для механизированной уборки;</p>
+                    </li>
+                    <li> 
+                      <p>Корневая система: мощный стержневой корень до 1,5 м, обеспечивающий высокую засухоустойчивость.</p>
+                    </li>
+                  </ul>
+                  <p>Сорт демонстрирует высокую энергию прорастания и дружные всходы даже при недостаточном увлажнении, что снижает риски неравномерности растений в засушливые годы.</p>
+                  <h2>Адаптация к климату и стрессоустойчивость</h2>
+                  <p>Одно из ключевых преимуществ Волжанина-50 — устойчивость к жестким климатическим факторам. За счет глубокой корневой системы и умеренного листового аппарата сорт способен выдерживать длительные периоды отсутствия осадков без существенной потери урожайности.</p>
+                  <h3>Основные стрессоустойчивые свойства:</h3>
+                  <ul class="ul-leaf">
+                    <li> 
+                      <p><b>Засухоустойчивость:</b> высокая — растение сохраняет тургор при длительном дефиците влаги;</p>
+                    </li>
+                    <li> 
+                      <p><b>Жаростойкость:</b> стабильное завязывание боба при температурах выше +30…+35 °C;</p>
+                    </li>
+                    <li> 
+                      <p><b>Устойчивость к полеганию:</b> стебель плотный, не ломается при сильных ветрах;</p>
+                    </li>
+                    <li> 
+                      <p><b>Устойчивость к болезням:</b> хорошая резистентность к аскохитозу, корневым гнилям, фузариозу.</p>
+                    </li>
+                  </ul>
+                  <p>Эти характеристики делают Волжанин-50 надежным сортом для регионов с нестабильными осадками и континентальным климатом.</p>
+                </div>
+                <div class="p-news-detail__block-image">
+                  <div class="p-news-detail__block-image-img"><img src="./img/news-detail-img.png" alt=""></div>
+                  <div class="p-news-detail__block-image-source">
+                    <div class="p-news-detail__block-image-source-name"><span>Источник:</span></div>
+                    <div class="p-news-detail__block-image-source-content"><span>кадр из фильма «Люди земли» Щеканинвест</span></div>
+                  </div>
+                </div>
+                <div class="p-news-detail__summary">
+                  <h2>Итог</h2>
+                  <p>Семена нута Волжанин-50 от ООО «Щелканинвест» представляют собой надежный, технологичный и экономически выгодный сорт для современных хозяйств. Он сочетает высокую урожайность, устойчивость к засухе, устойчивость к заболеваниям и отличные товарные характеристики. Качественная подготовка семенного фонда компанией «Щелканинвест» обеспечивает уверенный старт и стабильный результат в любой сезон.</p>
+                </div>
+                <div class="p-news-detail__share-wrap">
+                  <button class="p-news-detail__share">
+                    <svg class="icon p-news-detail__share-icon">
+                      <use href="./img/svg/sprite.svg#share-icon"></use>
+                    </svg><span>Поделиться</span>
+                  </button>
+                </div>
+              </div>
+              <div class="p-news-detail__back-button-wrap"><a class="button" href="./news.html">К новостям</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="page-loader">
+      <div class="spinner"></div>
+    </div>
+    <button class="page-scroller">
+      <svg class="icon page-scroller-icon">
+        <use href="./img/svg/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+    <div class="hystmodal" id="modal-1" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="c-modal">
+            <div class="c-modal__block">
+              <button class="c-modal__close" data-hystclose>
+                <svg class="icon c-modal__close-icon">
+                  <use href="./img/svg/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+              <div class="c-modal__title"><span>Свяжемся с вами <br>как можно скорее</span></div>
+              <form class="c-modal__form">
+                <input class="c-input" type="text" placeholder="Ваше имя">
+                <input class="c-input c-phone-input" type="phone" placeholder="Телефон для связи*">
+                <div class="consult__check">
+                  <label class="c-checkbox-wrap">
+                    <input type="checkbox" name=""><span class="c-checkbox">
+                      <svg class="icon c-checkbox-icon">
+                        <use href="./img/svg/sprite.svg#c-check"></use>
+                      </svg></span>
+                  </label>
+                  <div class="consult__check-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
+                </div>
+                <div class="c-modal__button">
+                  <button class="button" type="submit" data-hystmodal="#modal-2">Заказать звонок</button>
+                </div>
+              </form>
+            </div>
+            <div class="c-modal__required"> <span>*</span><span>— обязательные поля для заполнения</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="modal-2" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="c-modal">
+            <div class="c-modal__block">
+              <button class="c-modal__close" data-hystclose>
+                <svg class="icon c-modal__close-icon">
+                  <use href="./img/svg/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+              <div class="c-modal__title"><span>Свяжемся с вами <br>как можно скорее</span></div>
+              <form class="c-modal__form">
+                <input class="c-input c-phone-input" type="phone" placeholder="Телефон для связи">
+                <div class="consult__check">
+                  <label class="c-checkbox-wrap">
+                    <input type="checkbox" name=""><span class="c-checkbox">
+                      <svg class="icon c-checkbox-icon">
+                        <use href="./img/svg/sprite.svg#c-check"></use>
+                      </svg></span>
+                  </label>
+                  <div class="consult__check-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
+                </div>
+                <div class="c-modal__button">
+                  <button class="button" type="submit" data-hystmodal="#modal-2">Заказать звонок</button>
+                </div>
+              </form>
+            </div>
+            <div class="c-modal__tree"><img src="./img/form-tree.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12 footer__top">
+            <div class="footer__top-left"><a class="logo footer__logo" href="/">
+                <div class="logo__image"><img src="./img/footer-logo.svg" alt="logo"></div>
+                <div class="logo__text"><span class="logo__text-title">ООО «Щелканинвест»</span><span class="logo__text-description">Растениеводческая компания </span></div></a>
+              <div class="c-menu footer__menu">
+                <ul class="c-menu-list">
+                  <li class="c-menu-item c-menu-item--dropdown"><a class="c-menu-link" href="#"><span class="c-menu-link-text">Каталог семян</span>
+                      <svg class="icon c-menu-link-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg></a>
+                    <ul class="c-submenu">
+                      <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена овощей</a></li>
+                      <li class="c-submenu-item"><a class="c-submenu-link" href="#">Семена цветов</a></li>
+                    </ul>
+                  </li>
+                  <li class="c-menu-item"><a class="c-menu-link" href="#">Пресс-центр</a></li>
+                  <li class="c-menu-item"><a class="c-menu-link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="footer__mobile-menu">
+                <ul class="c-mobile-menu-list">
+                  <li class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+                    <button class="c-mobile-menu-link c-mobile-menu-link--toggle"><span class="c-mobile-menu-link-text">Каталог семян</span>
+                      <svg class="icon c-mobile-menu-link-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg>
+                    </button>
+                    <ul class="c-mobile-submenu">
+                      <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена овощей</a></li>
+                      <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена цветов</a></li>
+                      <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="#">Семена злаков</a></li>
+                    </ul>
+                  </li>
+                  <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Пресс-центр</a></li>
+                  <li class="c-mobile-menu-item"><a class="c-mobile-menu-link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__top-right">
+              <div class="c-contacts footer__contacts">
+                <div class="c-contacts__phone-wrapper"><a class="c-contacts__phone" href="tel:8 (84454) 5-46-31">
+                    <svg class="icon c-contacts__phone-icon">
+                      <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                    </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                      <svg class="icon c-contacts__phone-content-icon">
+                        <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                      </svg></span></a>
+                  <ul class="c-contacts__phone-dropdown">
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999999">8 (84454) 5-46-31</a></li>
+                    <li class="c-contacts__phone-dropdown-item"><a class="c-contacts__phone-dropdown-link" href="tel:+79999999998">8 (84454) 5-46-32</a></li>
+                  </ul>
+                </div>
+                <div class="c-mobile-menu-item c-mobile-menu-item--dropdown">
+                  <button class="c-mobile-menu-link c-mobile-menu-link--toggle">
+                    <div class="c-contacts__phone">
+                      <svg class="icon c-contacts__phone-icon">
+                        <use href="./img/svg/sprite.svg#carbon_phone-voice-filled"></use>
+                      </svg><span class="c-contacts__phone-content"><span class="c-contacts__phone-content-text">8 (84454) 5-46-31</span>
+                        <svg class="icon c-contacts__phone-content-icon">
+                          <use href="./img/svg/sprite.svg#carbon_caret-down"></use>
+                        </svg></span>
+                    </div>
+                  </button>
+                  <ul class="c-mobile-submenu">
+                    <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-31">8 (84454) 5-46-31</a></li>
+                    <li class="c-mobile-submenu-item"><a class="c-mobile-submenu-link" href="tel: 8 (84454) 5-46-32">8 (84454) 5-46-32</a></li>
+                  </ul>
+                </div><a class="c-contacts__email" href="email:Chelkan_invest@mail.ru">
+                  <svg class="icon c-contacts__email-icon">
+                    <use href="./img/svg/sprite.svg#material-symbols-light_mail"></use>
+                  </svg><span class="c-contacts__email-text">Chelkan_invest@mail.ru</span></a>
+              </div>
+              <div class="footer__button-n-worktime">
+                <div class="footer__button"><a class="button button--inversed" href="#" data-hystmodal="#modal-2">Заказать звонок</a></div>
+                <div class="footer__worktime"><span>Работаем <b>с 8 - 17 ч,</b> перерыв <b>с 12 - 13 ч</b></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container c-container">
+        <div class="row">
+          <div class="col-12 footer__bottom">
+            <div class="footer__bottom-links"><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></div>
+            <div class="footer__bottom-pr-volga">
+              <div class="footer__bottom-pr-volga-text"><span>Создание и продвижение сайтов — </span></div>
+              <div class="footer__bottom-pr-volga-link"><a href="#">PR-VOLGA</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./libs/hystmodal.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

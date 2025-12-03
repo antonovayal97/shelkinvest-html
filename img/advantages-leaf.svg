@@ -1,0 +1,18 @@
+<svg width="442" height="446" viewBox="0 0 442 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.14" filter="url(#filter0_f_1_1104)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M196.44 220.94C196.44 220.94 76.5914 253.934 49.1713 134.026C49.1713 134.026 136.041 88.9642 196.44 220.94Z" fill="#679707"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M225.219 246.508C225.219 246.508 141.706 191.352 63.1636 268.751C63.1636 268.751 120.58 341.617 225.219 246.508Z" fill="#679707"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M348.745 307.516C348.745 307.516 232.444 273.847 201.891 379.995C201.891 379.995 298.709 414.297 348.745 307.516Z" fill="#679707"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M363.718 311.393C363.718 311.393 288.403 238.348 363.272 158.522C363.272 158.522 441.379 231.307 363.718 311.393Z" fill="#679707"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M277.347 267.335C277.347 267.335 183.081 235.425 139.474 337.199C139.474 337.199 241.348 364.248 277.347 267.335Z" fill="#679707"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M232.448 238.707C232.448 238.707 151.926 197.376 198.325 110.518C198.325 110.518 292.971 162.914 232.448 238.707Z" fill="#679707"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M306.36 278.525C306.36 278.525 216.457 217.994 283.398 140.15C283.398 140.15 363.091 193.29 306.36 278.525Z" fill="#679707"/>
+</g>
+<defs>
+<filter id="filter0_f_1_1104" x="39.8712" y="101.218" width="367.548" height="293.326" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4.65" result="effect1_foregroundBlur_1_1104"/>
+</filter>
+</defs>
+</svg>
