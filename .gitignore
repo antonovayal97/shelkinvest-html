@@ -6,3 +6,4 @@ info.php
 *.tmp
 *.env
 .DS_Store
+*.ayal
