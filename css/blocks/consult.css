@@ -53,55 +53,6 @@
     width: 100%;
   }
 }
-.consult__check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 37px;
-}
-@media (max-width: 575.98px) {
-  .consult__check {
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-bottom: 19px;
-  }
-  .consult__check .c-checkbox {
-    margin-top: 3px;
-  }
-}
-.consult__check-text {
-  display: flex;
-  gap: 8px;
-  color: #fff;
-}
-@media (max-width: 575.98px) {
-  .consult__check-text {
-    flex-direction: column;
-    gap: 0;
-  }
-}
-.consult__check-text span {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-}
-@media (max-width: 575.98px) {
-  .consult__check-text span {
-    font-size: 14px;
-  }
-}
-.consult__check-text a {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
-  color: #d1f349;
-}
-@media (max-width: 575.98px) {
-  .consult__check-text a {
-    font-size: 14px;
-  }
-}
 .consult__button {
   display: flex;
   justify-content: center;

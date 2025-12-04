@@ -805,6 +805,56 @@ textarea {
   z-index: -1;
 }
 
+.c-check-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 37px;
+}
+@media (max-width: 575.98px) {
+  .c-check-confirm {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 19px;
+  }
+  .c-check-confirm .c-checkbox {
+    margin-top: 3px;
+  }
+}
+.c-check-confirm-text {
+  display: flex;
+  gap: 8px;
+  color: #fff;
+}
+@media (max-width: 575.98px) {
+  .c-check-confirm-text {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.c-check-confirm-text span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media (max-width: 575.98px) {
+  .c-check-confirm-text span {
+    font-size: 14px;
+  }
+}
+.c-check-confirm-text a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #d1f349;
+}
+@media (max-width: 575.98px) {
+  .c-check-confirm-text a {
+    font-size: 14px;
+  }
+}
+
 #modal-1 .hystmodal__wrap {
   -webkit-backdrop-filter: blur(17px);
           backdrop-filter: blur(17px);
