@@ -1327,6 +1327,7 @@ textarea {
 }
 .footer__bottom-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .footer__bottom-link {
