@@ -768,23 +768,23 @@ textarea {
 .c-modal__form .c-checkbox {
   margin-top: 4px;
 }
-.c-modal__form .consult__check {
+.c-modal__form .c-check-confirm {
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 0;
 }
-.c-modal__form .consult__check-text {
+.c-modal__form .c-check-confirm-text {
   flex-direction: column;
   gap: 0;
   color: #0c2549;
 }
-.c-modal__form .consult__check-text span {
+.c-modal__form .c-check-confirm-text span {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0%;
 }
-.c-modal__form .consult__check-text a {
+.c-modal__form .c-check-confirm-text a {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
