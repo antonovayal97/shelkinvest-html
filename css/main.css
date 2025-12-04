@@ -1768,6 +1768,11 @@ textarea {
 .p-news__card-wrap:hover .p-news__card-info {
   background-color: #d1f349;
 }
+@media (max-width: 767.98px) {
+  .p-news__card-wrap:hover .p-news__card-info {
+    background-color: #fff;
+  }
+}
 .p-news__card-image {
   height: 245px;
 }
