@@ -37,6 +37,11 @@
   text-align: left;
   background-color: #d1f349;
 }
+@media (max-width: 767.98px) {
+  .our-products__card-wrap:hover .our-products__card .our-products__card-button {
+    background-color: #fff;
+  }
+}
 .our-products__card-wrap:hover .our-products__card .our-products__card-button-arrow {
   display: block;
   opacity: 1;
