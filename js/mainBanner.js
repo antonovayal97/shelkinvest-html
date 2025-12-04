@@ -79,12 +79,3 @@ class MainBannerAnimator {
     observer.observe(this.mainBanner);
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  new MainBannerAnimator(".main-banner", {
-    duration: 750,
-    delayLogo: 150,
-    type: "ease-in-out",
-    visibilityThreshold: 0.7,
-  });
-});
