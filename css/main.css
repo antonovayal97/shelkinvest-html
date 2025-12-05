@@ -2155,9 +2155,6 @@ textarea {
   }
 }
 
-.p-catalog {
-  padding-bottom: 58px;
-}
 .p-catalog__description {
   margin-bottom: 20px;
 }
@@ -2169,5 +2166,5 @@ textarea {
 }
 .p-catalog .our-products__cards {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 58px;
 }
