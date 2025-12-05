@@ -178,6 +178,9 @@ textarea {
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
+.page--with-bg--03::before {
+  background-color: rgba(255, 255, 255, 0.3098039216);
+}
 .page__title {
   margin-bottom: 20px;
 }
@@ -2148,4 +2151,21 @@ textarea {
   .p-news-detail__back-button-wrap .button {
     width: 100%;
   }
+}
+
+.p-catalog {
+  padding-bottom: 58px;
+}
+.p-catalog__description {
+  margin-bottom: 20px;
+}
+.p-catalog__description p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.p-catalog .our-products__cards {
+  padding-top: 0;
+  padding-bottom: 0;
 }

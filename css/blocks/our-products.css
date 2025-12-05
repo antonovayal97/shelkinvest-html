@@ -87,6 +87,11 @@
   overflow: hidden;
   border-top: 1px solid rgba(0, 0, 0, 0.2509803922);
 }
+@media (max-width: 767.98px) {
+  .our-products__card-button {
+    min-height: auto;
+  }
+}
 .our-products__card-button-title {
   opacity: 1;
   transform: translateX(0);
