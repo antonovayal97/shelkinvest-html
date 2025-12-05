@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/blocks/our-products.min.css">
     <link rel="stylesheet" href="./css/blocks/consult.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   </head>
   <body>
     <header class="header">
@@ -119,92 +120,147 @@
       </div>
     </header>
     <main>
-      <div class="page page--with-bg page--with-bg--03" style="background-image: url('./img/our-products-background.png')">
+      <div class="page page--with-bg" style="background-image: url('./img/about-background.webp')">
         <div class="container c-container">
           <div class="row">
             <div class="col-12">
               <div class="breadcrumbs">
                 <div class="breadcrumbs__item"><a href="#">Главная</a></div>
                 <div class="breadcrumbs__dot"><span>•</span></div>
-                <div class="breadcrumbs__item"><span>Каталог</span></div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="page__title">
-                <h1>Продукция</h1>
+                <div class="breadcrumbs__item"><a href="#">Каталог</a></div>
+                <div class="breadcrumbs__dot"><span>•</span></div>
+                <div class="breadcrumbs__item"><span>Волжанин</span></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-catalog">
-          <div class="container c-container">
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <div class="p-catalog__description">
-                  <p>Мы специализируемся на собственном производстве семян нута, учитывая особенности климата и почвы каждого региона, чтобы обеспечить максимальную урожайность. Все семена проходят строгий контроль автора сортов и имеют полный пакет сертификатов соответствия.</p>
+        <div class="p-catalog-detail-1">
+          <div class="p-catalog-detail-1__top">
+            <div class="container c-container">
+              <div class="p-catalog-detail-1__top-row row">
+                <div class="col-12 col-lg-5 col-xl-5 col-xxl-4">
+                  <div class="p-catalog-detail-1__card">
+                    <div class="p-catalog-detail-1__card-title">
+                      <h1>Волжанин</h1>
+                    </div>
+                    <div class="p-catalog-detail-1__card-props">
+                      <div class="p-catalog-detail-1__card-props-col">
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Сорт</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>среднеспелый</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Вегетационный период</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>71-101 день</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Белка в зерне</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>до 30,9%</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Масса 1000 зерен</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>312 грамм</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop p-catalog-detail-1__card--itog">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>В наличии тонн:</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>10 598</span></div>
+                        </div>
+                      </div>
+                      <div class="p-catalog-detail-1__card-props-col">
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Форма</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>Кустовая</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Высота стебля</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>0,5-0,6м</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Семян в бобе</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>1-2 шт</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Выход зерна</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>82-85%</span></div>
+                        </div>
+                        <div class="p-catalog-detail-1__card-prop">
+                          <div class="p-catalog-detail-1__card-prop-name"><span>Репродукция</span></div>
+                          <div class="p-catalog-detail-1__card-prop-value"><span>Вторая</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-catalog-detail-1__card-info"><span>Цена с НДС:  уточнять у сотрудников</span></div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="our-products__cards">
-              <div class="row">
-                <div class="col-12 col-md-4 our-products__card-wrap"><a class="our-products__card" href="#">
-                    <div class="our-products__card-image"><img src="./img/our-products-1.png" alt=""></div>
-                    <div class="our-products__card-button">
-                      <div class="our-products__card-button-title"><span>ВОЛЖАНИН</span></div>
-                      <div class="our-products__card-button-arrow">
-                        <svg class="icon our-products__card-button-arrow-icon">
-                          <use href="./img/svg/sprite.svg#button-arrow"></use>
-                        </svg>
+                <div class="col-12 col-lg-7 col-xl-7 col-xxl-8">
+                  <div class="swiper catalog-detail__slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/p-catalog-detail-image.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/p-catalog-detail-image.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/p-catalog-detail-image.png" alt=""></div>
+                    </div>
+                    <div class="catalog-detail__slider-controls">
+                      <div class="catalog-detail__slider-arrows">
+                        <div class="catalog-detail__slider-arrow catalog-detail__slider-arrow--prev">
+                          <svg class="icon catalog-detail__slider-arrow-icon">
+                            <use href="./img/svg/sprite.svg#button-arrow"></use>
+                          </svg>
+                        </div>
+                        <div class="catalog-detail__slider-arrow catalog-detail__slider-arrow--next">
+                          <svg class="icon catalog-detail__slider-arrow-icon">
+                            <use href="./img/svg/sprite.svg#button-arrow"></use>
+                          </svg>
+                        </div>
                       </div>
-                    </div></a></div>
-                <div class="col-12 col-md-4 our-products__card-wrap"><a class="our-products__card" href="#">
-                    <div class="our-products__card-image"><img src="./img/our-products-2.png" alt=""></div>
-                    <div class="our-products__card-button">
-                      <div class="our-products__card-button-title"><span>ВОЛЖАНИН 50</span></div>
-                      <div class="our-products__card-button-arrow">
-                        <svg class="icon our-products__card-button-arrow-icon">
-                          <use href="./img/svg/sprite.svg#button-arrow"></use>
-                        </svg>
+                      <div class="catalog-detail__slider-pagination">
+                        <div class="swiper-pagination"></div>
                       </div>
-                    </div></a></div>
-                <div class="col-12 col-md-4 our-products__card-wrap"><a class="our-products__card" href="#">
-                    <div class="our-products__card-image"><img src="./img/our-products-3.png" alt=""></div>
-                    <div class="our-products__card-button">
-                      <div class="our-products__card-button-title"><span>Прочие сельхоз <br>культуры и продукция</span></div>
-                      <div class="our-products__card-button-arrow">
-                        <svg class="icon our-products__card-button-arrow-icon">
-                          <use href="./img/svg/sprite.svg#button-arrow"></use>
-                        </svg>
-                      </div>
-                    </div></a></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="consult" style="background-image: url(./img/consult.webp)">
-          <div class="container c-container">
-            <div class="row">
-              <div class="col-12">
-                <div class="consult__title">
-                  <h2>Заказать консультацию</h2>
+          <div class="p-catalog-detail-1__bottom">
+            <div class="container c-container">
+              <div class="row justify-content-center p-catalog-detail-1__bottom-row">
+                <div class="col-12 col-xl-7 col-xxl-8">
+                  <div class="p-catalog-detail-1__content">
+                    <div class="p-catalog-detail-1__content-title">
+                      <h2>описание сорта</h2>
+                    </div>
+                    <div class="p-catalog-detail-1__content-description">
+                      <p>Мировой рынок предъявляет свои требования к крупности зерна. Чем крупнее нут, тем выше цена. Волжанин –  новый крупносемянный сорт нута, был выведен методом индивидуального отбора из гибридной популяции, полученной от скрещивания сорта Волгоградский 10 с образцом из Сирии. Районирован в 2011г. Растения кустовой формы, высота стебля составляет 0,5-0,6м, прикрепление нижних бобов на 20-50мм выше стандарта. Цветки белые. Семена с кремовой окраской, форма от округлой до угловатой, ребристость отсутствует или очень слабая, семян в бобе 1-2.</p>
+                      <p>Главным отличием нового сорта Волжанин  это показатель массы 1000 зерен (312 грамм) в среднем, на 40-50 грамм больше, чем у Приво 1. Выход зерна с решета 7мм составляет 82-85%.</p>
+                      <p>Этот сорт относится к группе среднеспелых сортов, созревает на 3-4 суток позднее стандарта Волгоградский 10. </p>
+                      <p>Вегетационный период составляет 71-101 день. По устойчивости к засухе сорт Волжанин несколько уступает стандартным сортам нута, для формирования высокого урожая ему требуется более высокая обеспеченность растений влагой, особенно в период цветения и налива. Оригинатор и патентообладатель: Балашов Василий Васильевич (г. Волгоград).</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="consult__form">
-                  <div class="consult__inputs">
-                    <input class="c-input" type="text" placeholder="Ваше имя">
-                    <input class="c-input c-phone-input" type="phone" placeholder="Телефон">
-                    <input class="c-input" type="email" placeholder="Email">
-                  </div>
-                  <div class="c-check-confirm">
-                    <label class="c-checkbox-wrap">
-                      <input type="checkbox" name=""><span class="c-checkbox">
-                        <svg class="icon c-checkbox-icon">
-                          <use href="./img/svg/sprite.svg#c-check"></use>
-                        </svg></span>
-                    </label>
-                    <div class="c-check-confirm-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
-                  </div>
-                  <div class="consult__button">
-                    <button class="button button--inversed button--big" type="submit">Отправить</button>
+                <div class="col-12 col-md-6 col-xl-5 col-xxl-4">
+                  <div class="p-catalog-detail-1__form">
+                    <div class="c-form">
+                      <div class="c-form__block">
+                        <div class="c-form__title"><span>Свяжемся с вами <br>как можно скорее</span></div>
+                        <form class="c-form__form">
+                          <input class="c-input" type="text" placeholder="Ваше имя">
+                          <input class="c-input c-phone-input" type="phone" placeholder="Телефон для связи*">
+                          <div class="c-check-confirm">
+                            <label class="c-checkbox-wrap">
+                              <input type="checkbox" name=""><span class="c-checkbox">
+                                <svg class="icon c-checkbox-icon">
+                                  <use href="./img/svg/sprite.svg#c-check"></use>
+                                </svg></span>
+                            </label>
+                            <div class="c-check-confirm-text"><span>Я соглашаюсь на обработку</span><a href="#">персональных данных</a></div>
+                          </div>
+                          <div class="c-form__button">
+                            <button class="button" type="submit">Заказать звонок</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="c-form__required"> <span>*</span><span>— обязательные поля для заполнения</span></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -382,6 +438,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/catalog-slider.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./libs/hystmodal.min.js"></script>
