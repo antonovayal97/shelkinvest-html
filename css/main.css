@@ -2237,8 +2237,13 @@ textarea {
   letter-spacing: 0%;
 }
 .p-catalog .our-products__cards {
-  padding-top: 0;
+  padding-top: 40px;
   padding-bottom: 58px;
+}
+@media (max-width: 767.98px) {
+  .p-catalog .our-products__cards {
+    padding: 0;
+  }
 }
 
 .p-catalog-detail-1 {
