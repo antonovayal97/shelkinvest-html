@@ -163,6 +163,8 @@ textarea {
 }
 .page--with-bg {
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .page--with-bg > * {
   z-index: 2;
