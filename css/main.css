@@ -133,6 +133,10 @@ textarea {
   font-family: inherit;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .icon {
   width: 24px;
   height: 24px;
