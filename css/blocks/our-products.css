@@ -11,6 +11,9 @@
   padding-top: 75px;
   padding-bottom: 64px;
 }
+.our-products__cards .row {
+  row-gap: calc(1 * var(--bs-gutter-x));
+}
 @media (max-width: 767.98px) {
   .our-products__cards {
     padding-top: 41px;
