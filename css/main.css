@@ -1824,6 +1824,9 @@ main {
   border: 1px solid #86B627;
   border-radius: 100px;
 }
+.p-news__filter-item--active {
+  background-color: rgba(209, 243, 73, 0.25);
+}
 .p-news__filter-item:hover {
   color: #4d9215;
 }
