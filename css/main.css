@@ -2006,6 +2006,11 @@ main {
     margin-bottom: 5px;
   }
 }
+.p-news-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .p-news-detail__tag {
   color: #4d9215;
 }
