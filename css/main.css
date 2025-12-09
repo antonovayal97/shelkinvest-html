@@ -1951,9 +1951,13 @@ main {
     line-height: 22px;
   }
 }
+.p-news__card-date {
+  flex-shrink: 0;
+}
 .p-news__card-tags {
   color: #4d9215;
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
 }
 .p-news__card-name {
