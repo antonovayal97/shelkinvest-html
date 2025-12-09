@@ -1953,6 +1953,8 @@ main {
 }
 .p-news__card-tags {
   color: #4d9215;
+  display: flex;
+  gap: 6px;
 }
 .p-news__card-name {
   font-weight: 500;
