@@ -47,6 +47,8 @@
     transform: translateY(-50%) translateX(0);
   }
   .our-products__card-wrap:hover .our-products__card .our-products__card-button-title {
+    padding: 0;
+    padding-right: 100px;
     justify-content: flex-start;
     width: auto;
     font-weight: 700;
@@ -101,6 +103,7 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   transition: left 0.3s ease;
+  padding: 0 45px;
   display: flex;
   align-items: center;
   justify-content: center;
