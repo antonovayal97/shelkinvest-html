@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   let tabs = document.querySelectorAll(".p-catalog-detail-2__tab");
   let contents = document.querySelectorAll(".p-catalog-detail-2__tabs-content");
-
-  if (tabs.length == 0) {
-    return 0;
-  }
   let current_content = contents[0];
   let current_tab = tabs[0];
 
