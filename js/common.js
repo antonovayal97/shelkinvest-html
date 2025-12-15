@@ -128,6 +128,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  let pageNewsScroller = document.querySelector(".p-news-detail__up-button");
+
+  if (pageNewsScroller) {
+    pageNewsScroller.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 700) {
+        pageNewsScroller.classList.add("p-news-detail__up-button--active");
+      } else {
+        pageNewsScroller.classList.remove("p-news-detail__up-button--active");
+      }
+    });
+  }
+
   let phones = document.querySelectorAll(".c-phone-input");
 
   phones.forEach((phone) => {
