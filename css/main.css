@@ -1413,7 +1413,7 @@ main {
   top: unset;
   bottom: 100%;
 }
-.footer .c-submenu-item:hover {
+.footer .c-submenu-link:hover {
   color: #4d9215 !important;
 }
 .footer__top {
